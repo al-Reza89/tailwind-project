@@ -14,27 +14,38 @@ const Searchbar = () => {
             type="text"
             className=" h-12 w-full md:w-[60%] rounded-md my-3 md:border-r-0 md:rounded-r-none "
           />
-          <div className=" flex md:h-12  items-center gap-2 overflow-hidden ">
+          <div className=" flex md:h-12  items-center gap-2 overflow-hidden md:w-[40%] ">
             <button
-              className="bg-blue-600 w-[50%] h-9 md:h-12 rounded-md
+              className="bg-blue-600 w-[50%] md:w-[40%] h-9 md:h-12 rounded-md
             md:rounded-l-none "
             >
               Search
             </button>
-            <span className="hidden md:inline-block text-white ">OR</span>
-            <button className="bg-red-600 w-[50%] h-9 md:h-12 md:w-20  rounded-md ">
+            <span className="hidden md:inline-block text-white md:w-[10%] ">
+              OR
+            </span>
+            <button className="bg-red-600 w-[50%] h-9 md:h-12 md:w-[40%]  rounded-md ">
               Explore
             </button>
           </div>
         </div>
-        <div>
-          <div>
-            <div>Are you new to OCW?</div>
-            <div>Get Started</div>
+        <div className="bg-[#302d2d] h-36 mt-5 rounded-md md:h-20  md:flex md:items-center  ">
+          <div className="flex  h-[40%] items-center md:w-[40%] md:items-center md:flex-col ">
+            <div className="text-white ml-4 md:ml-0 md:mr-10">
+              Are you new to OCW?
+            </div>
+            <div className="text-blue-600 underline p-2 md:p-0 md:mr-28 ">
+              Get Started
+            </div>
           </div>
-          <div>
-            <span>Looking for teaching materials?</span>
-            <div>Educators Start Here</div>
+          <div className=" bg-white border-b w-[98%] mx-auto md:w-[1px] md:h-[90%] md:justify-center " />
+          <div className="flex h-[50%] items-start flex-col justify-center md:flex md:w-[55%] ">
+            <span className="text-white ml-4 md:mt-[20px] md:justify-start ">
+              Looking for teaching materials?
+            </span>
+            <div className="text-blue-600 underline ml-4">
+              Educators Start Here
+            </div>
           </div>
         </div>
         <div>
