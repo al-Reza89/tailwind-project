@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Searchbar from "../components/Searchbar";
+import Slide from "../components/Slide";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <Navbar />
           <Searchbar />
         </div>
+        <Slide />
       </div>
     </div>
   );

@@ -48,8 +48,8 @@ const Searchbar = () => {
             </div>
           </div>
         </div>
-        <div className="w-[90%] mx-auto my-5 bg-[#e0d6d6] bg-opacity-10 md:h-48 h-60 text-white flex flex-col justify-center xxs:h-[380px] sm:h-[300px] ">
-          <div className="w-[70%] h-[80%] mx-auto ">
+        <div className="w-[90%] mx-auto my-5 bg-[#e0d6d6] bg-opacity-10 h-auto text-white flex flex-col justify-center ">
+          <div className="w-[70%] h-auto mx-auto p-5 ">
             <h2 className="text-xl">
               <h2> UNLOCKING KNOWLEDGE,</h2>
               EMPOWERING MINDS.
