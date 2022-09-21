@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <div className="bg-[#3d3939]">
+        <div className=" bg-local bg-[url('../public/assets/homepage.jpg')] ">
           <Navbar />
           <Searchbar />
         </div>

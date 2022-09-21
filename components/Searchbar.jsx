@@ -48,17 +48,17 @@ const Searchbar = () => {
             </div>
           </div>
         </div>
-        <div className="w-[90%] mx-auto my-5 bg-[#e0d6d6] bg-opacity-10 h-auto text-white flex flex-col justify-center ">
+        <div className="w-[70%] rounded-sm mx-auto my-5 bg-[#9ba7e7] bg-opacity-50 h-auto text-white flex flex-col justify-center ">
           <div className="w-[70%] h-auto mx-auto p-5 ">
-            <h2 className="text-xl">
+            <h2 className="text-xl font-bold">
               <h2> UNLOCKING KNOWLEDGE,</h2>
               EMPOWERING MINDS.
             </h2>
-            <h1 className="mt-4 mb-4">
+            <h1 className="mt-4 mb-4 font-bold ">
               Free lecture notes, exams, and videos from MIT. <br /> No
               registration required.
             </h1>
-            <span className="underline underline-offset-4">
+            <span className="underline underline-offset-4 font-bold ">
               LEARN MORE ABOUT THE OCW MISSION
             </span>
           </div>

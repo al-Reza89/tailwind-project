@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="w-[100%] lg:mx-auto flex max-w-7xl lg:justify-between bg-black lg:bg-[#3d3939]  h-20 items-center ">
+    <div className="w-[100%] lg:mx-auto flex max-w-7xl lg:justify-between  h-20 items-center ">
       <div className="flex items-center ">
         <AiOutlineMenu className="text-white h-6 w-6 lg:hidden  " />
         <div className=" h-50 w-80 m-7 ">
