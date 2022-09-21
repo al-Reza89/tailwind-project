@@ -48,13 +48,18 @@ const Searchbar = () => {
             </div>
           </div>
         </div>
-        <div>
-          <span>UNLOCKING KNOWLEDGE, EMPOWERING MINDS.</span>
-          <h1>
-            Free lecture notes, exams, and videos from MIT. No registration
-            required.
-          </h1>
-          <span>LEARN MORE ABOUT THE OCW MISSION</span>
+        <div className="w-[90%] mx-auto my-5 bg-[#e0d6d6] bg-opacity-30 md:h-48 h-60 text-white flex flex-col justify-center  ">
+          <div className="w-[70%] h-[80%] mx-auto ">
+            <span className="">
+              UNLOCKING KNOWLEDGE,
+              <br /> EMPOWERING MINDS.
+            </span>
+            <h1>
+              Free lecture notes, exams, and videos from MIT. <br /> No
+              registration required.
+            </h1>
+            <span>LEARN MORE ABOUT THE OCW MISSION</span>
+          </div>
         </div>
       </div>
     </div>
