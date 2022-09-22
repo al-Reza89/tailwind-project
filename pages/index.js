@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Searchbar from "../components/Searchbar";
 import Slide from "../components/Slide";
@@ -19,6 +20,7 @@ export default function Home() {
           <Searchbar />
         </div>
         <Slide />
+        <Card />
       </div>
     </div>
   );
