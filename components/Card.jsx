@@ -1,10 +1,9 @@
+import Image from "next/image.js";
 import React from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { imgData } from "../public/assets/data.js";
 
 const Card = () => {
-  console.log(imgData);
-
   return (
     <div className="max-w-6xl mx-auto py-20 ">
       <div className="w-full flex">
@@ -22,14 +21,19 @@ const Card = () => {
           </div>
         </div>
       </div>
-      {imgData.map((data) => (
-        <h1 key={data.id}>{data.id}</h1>
-      ))}
-      <div>
-        <div>card1</div>
-        <div>card 2</div>
-        <div>card 3</div>
-        <div>card 4</div>
+
+      <div className="relative ">
+        {imgData.map((data) => (
+          <Image
+            src={data.img}
+            alt=""
+            key={data.id}
+            objectFit="contain"
+            layout="fill"
+            height={20}
+            width={20}
+          />
+        ))}
       </div>
     </div>
   );
