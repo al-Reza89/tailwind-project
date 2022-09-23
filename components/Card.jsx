@@ -29,9 +29,11 @@ const Card = () => {
           <div className="">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
               <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3">
+              <div className="pl-3 pb-3">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
-                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1 className="font-bold text-xl hover:underline cursor-pointer">
+                  Cosmic Origin of the Chemical Elements
+                </h1>
                 <h1>Instructors(s): Prof. Anna Frebel</h1>
                 <h1>Topic(s): Science , Physics , Astrophysics</h1>
               </div>
@@ -40,9 +42,11 @@ const Card = () => {
           <div className="hidden md:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
               <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3">
+              <div className="pl-3 pb-3 ">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
-                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1 className="font-bold text-xl hover:underline cursor-pointer">
+                  Cosmic Origin of the Chemical Elements
+                </h1>
                 <h1>Instructors(s): Prof. Anna Frebel</h1>
                 <h1>Topic(s): Science , Physics , Astrophysics</h1>
               </div>
@@ -51,9 +55,11 @@ const Card = () => {
           <div className="hidden lg:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
               <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3">
+              <div className="pl-3 pb-3">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
-                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1 className="font-bold text-xl hover:underline cursor-pointer">
+                  Cosmic Origin of the Chemical Elements
+                </h1>
                 <h1>Instructors(s): Prof. Anna Frebel</h1>
                 <h1>Topic(s): Science , Physics , Astrophysics</h1>
               </div>
@@ -62,9 +68,11 @@ const Card = () => {
           <div className="hidden xl:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
               <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3">
+              <div className="pl-3 pb-3 ">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
-                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1 className="font-bold text-xl hover:underline cursor-pointer">
+                  Cosmic Origin of the Chemical Elements
+                </h1>
                 <h1>Instructors(s): Prof. Anna Frebel</h1>
                 <h1>Topic(s): Science , Physics , Astrophysics</h1>
               </div>
