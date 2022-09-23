@@ -22,6 +22,7 @@ export default function Home() {
         <Slide />
         <Card />
         <Collection />
+        <Card newFeature={"newFeature"} />
       </div>
     </div>
   );
