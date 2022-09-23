@@ -25,41 +25,49 @@ const Card = () => {
       </div>
 
       <div className="mt-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 h-auto rounded-lg ">
-          <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
-            <div className="h-52 w-auto ">Image</div>
-            <div>
-              <h1>RES.8-007 | UNDERGRADUATE</h1>
-              <h1>Cosmic Origin of the Chemical Elements</h1>
-              <h1>Instructors(s): Prof. Anna Frebel</h1>
-              <h1>Topic(s): Science , Physics , Astrophysics</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-auto rounded-lg ">
+          <div className="">
+            <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
+              <div className="h-52 w-auto ">Image</div>
+              <div className="pl-3">
+                <h1>RES.8-007 | UNDERGRADUATE</h1>
+                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1>Instructors(s): Prof. Anna Frebel</h1>
+                <h1>Topic(s): Science , Physics , Astrophysics</h1>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md  hover:shadow-3xl ">
-            <div className="h-52 w-auto ">Image</div>
-            <div>
-              <h1>RES.8-007 | UNDERGRADUATE</h1>
-              <h1>Cosmic Origin of the Chemical Elements</h1>
-              <h1>Instructors(s): Prof. Anna Frebel</h1>
-              <h1>Topic(s): Science , Physics , Astrophysics</h1>
+          <div className="hidden md:inline-block">
+            <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
+              <div className="h-52 w-auto ">Image</div>
+              <div className="pl-3">
+                <h1>RES.8-007 | UNDERGRADUATE</h1>
+                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1>Instructors(s): Prof. Anna Frebel</h1>
+                <h1>Topic(s): Science , Physics , Astrophysics</h1>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md  hover:shadow-3xl ">
-            <div className="h-52 w-auto ">Image</div>
-            <div>
-              <h1>RES.8-007 | UNDERGRADUATE</h1>
-              <h1>Cosmic Origin of the Chemical Elements</h1>
-              <h1>Instructors(s): Prof. Anna Frebel</h1>
-              <h1>Topic(s): Science , Physics , Astrophysics</h1>
+          <div className="hidden lg:inline-block">
+            <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
+              <div className="h-52 w-auto ">Image</div>
+              <div className="pl-3">
+                <h1>RES.8-007 | UNDERGRADUATE</h1>
+                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1>Instructors(s): Prof. Anna Frebel</h1>
+                <h1>Topic(s): Science , Physics , Astrophysics</h1>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md  hover:shadow-3xl ">
-            <div className="h-52 w-auto ">Image</div>
-            <div>
-              <h1>RES.8-007 | UNDERGRADUATE</h1>
-              <h1>Cosmic Origin of the Chemical Elements</h1>
-              <h1>Instructors(s): Prof. Anna Frebel</h1>
-              <h1>Topic(s): Science , Physics , Astrophysics</h1>
+          <div className="hidden xl:inline-block">
+            <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
+              <div className="h-52 w-auto ">Image</div>
+              <div className="pl-3">
+                <h1>RES.8-007 | UNDERGRADUATE</h1>
+                <h1>Cosmic Origin of the Chemical Elements</h1>
+                <h1>Instructors(s): Prof. Anna Frebel</h1>
+                <h1>Topic(s): Science , Physics , Astrophysics</h1>
+              </div>
             </div>
           </div>
         </div>
