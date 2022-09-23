@@ -3,9 +3,9 @@ import Image from "next/image.js";
 import React from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { imgData } from "../public/assets/data.js";
-import one from "../public/assets/1.png";
 
 const Card = () => {
+  console.log({ imgData });
   return (
     <div className="max-w-6xl mx-auto py-20 ">
       <div className="w-full flex">
@@ -26,10 +26,16 @@ const Card = () => {
 
       <div className="mt-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-auto rounded-lg ">
-          <div className="">
+          <div className=" ">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
-              <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3 pb-3">
+              <div className="h-[240px] w-auto relative ">
+                <Image
+                  layout="fill"
+                  src={imgData[0].img}
+                  alt={imgData[0].img}
+                />
+              </div>
+              <div className="pl-3 py-3  ">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
                 <h1 className="font-bold text-xl hover:underline cursor-pointer">
                   Cosmic Origin of the Chemical Elements
@@ -41,8 +47,14 @@ const Card = () => {
           </div>
           <div className="hidden md:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
-              <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3 pb-3 ">
+              <div className="h-[240px] w-auto relative ">
+                <Image
+                  layout="fill"
+                  src={imgData[1].img}
+                  alt={imgData[0].img}
+                />
+              </div>
+              <div className="pl-3 py-3 ">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
                 <h1 className="font-bold text-xl hover:underline cursor-pointer">
                   Cosmic Origin of the Chemical Elements
@@ -54,8 +66,14 @@ const Card = () => {
           </div>
           <div className="hidden lg:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
-              <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3 pb-3">
+              <div className="h-[240px] w-auto relative ">
+                <Image
+                  layout="fill"
+                  src={imgData[2].img}
+                  alt={imgData[0].img}
+                />
+              </div>
+              <div className="pl-3 py-3">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
                 <h1 className="font-bold text-xl hover:underline cursor-pointer">
                   Cosmic Origin of the Chemical Elements
@@ -67,8 +85,14 @@ const Card = () => {
           </div>
           <div className="hidden xl:inline-block">
             <div className="flex flex-col  border-[1px] border-[#6d5f5f] rounded-md shadow-2xl hover:shadow-3xl ">
-              <div className="h-52 w-auto ">Image</div>
-              <div className="pl-3 pb-3 ">
+              <div className="h-[240px] w-auto relative ">
+                <Image
+                  layout="fill"
+                  src={imgData[3].img}
+                  alt={imgData[0].img}
+                />
+              </div>
+              <div className="pl-3 py-3 ">
                 <h1>RES.8-007 | UNDERGRADUATE</h1>
                 <h1 className="font-bold text-xl hover:underline cursor-pointer">
                   Cosmic Origin of the Chemical Elements
