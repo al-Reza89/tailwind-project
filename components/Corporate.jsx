@@ -5,7 +5,7 @@ import { corporate1 } from "../public/assets/corporate1.jpeg";
 
 const Corporate = () => {
   return (
-    <div className="w-full bg-white border-b-black pb-3">
+    <div className="w-full bg-white border-b-[1px] border-[#d4c4c4] pb-3">
       <div className="max-w-4xl mx-auto flex flex-col  pt-4 ">
         <h1 className="font-bold text-2xl text-center ">
           OUR CORPORATE AND FOUNDATION SUPPORTERS

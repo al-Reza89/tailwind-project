@@ -5,6 +5,7 @@ import Collection from "../components/Collection";
 import Connect from "../components/Connect";
 import Corporate from "../components/Corporate";
 import Donation from "../components/Donation";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import News from "../components/News";
 import Searchbar from "../components/Searchbar";
@@ -31,6 +32,7 @@ export default function Home() {
         {/* <News /> */}
         <Connect />
         <Corporate />
+        <Footer />
       </div>
     </div>
   );
