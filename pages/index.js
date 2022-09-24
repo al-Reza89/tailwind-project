@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/Card";
 import Collection from "../components/Collection";
+import Connect from "../components/Connect";
 import Donation from "../components/Donation";
 import Navbar from "../components/Navbar";
 import News from "../components/News";
@@ -26,7 +27,8 @@ export default function Home() {
         <Collection />
         <Card newFeature={"newFeature"} />
         <Donation />
-        <News />
+        {/* <News /> */}
+        <Connect />
       </div>
     </div>
   );
