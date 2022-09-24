@@ -3,7 +3,7 @@ import { AiFillHeart } from "react-icons/ai";
 
 const Donation = () => {
   return (
-    <div className="w-full bg-gray-200 h-auto">
+    <div className="w-full bg-gray-200 h-auto mb-5">
       <div className="max-w-4xl mx-auto md:flex p-5 ">
         <div className="flex md:w-[70%] flex-col ">
           <h1 className="font-bold text-3xl my-2 ">
