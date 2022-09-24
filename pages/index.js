@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import Collection from "../components/Collection";
 import Donation from "../components/Donation";
 import Navbar from "../components/Navbar";
+import News from "../components/News";
 import Searchbar from "../components/Searchbar";
 import Slide from "../components/Slide";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Collection />
         <Card newFeature={"newFeature"} />
         <Donation />
+        <News />
       </div>
     </div>
   );
