@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
@@ -15,6 +16,16 @@ const card = () => {
 
         {/* right big circle */}
         <div className="w-[512px] h-[512px] bg-purple-200 absolute rounded-full -top-20 -right-56 "></div>
+
+        {/* screen shot */}
+
+        <div className="absolute  top-8 right-8 ">
+          <img
+            className="w-64 h-36 object-cover rounded-2xl shadow-3xl rotate-2 "
+            src="/assets/radio.jpeg"
+            alt=""
+          />
+        </div>
 
         {/* last content */}
         <div className=" relative flex flex-col justify-end h-full p-8 space-y-4 w-2/3 ">
