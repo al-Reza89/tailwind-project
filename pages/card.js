@@ -32,6 +32,15 @@ const card = () => {
           />
         </div>
 
+        {/* last button */}
+
+        <div className="absolute right-12 inset-y-0 grid items-center ">
+          <div className="w-12 h-12 bg-purple-500 ring-4 ring-white rounded-full grid place-items-center ">
+            <span className="sr-only"></span>
+            <AiOutlineCaretRight color="white" className="w-8 h-8  " />
+          </div>
+        </div>
+
         {/* last content */}
         <div className=" relative flex flex-col justify-end h-full p-8 space-y-4 w-2/3 ">
           <p className="uppercase font-semibold text-xs text-pink-600  ">
