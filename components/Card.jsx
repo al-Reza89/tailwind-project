@@ -5,8 +5,6 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { imgData } from "../public/assets/data.js";
 
 const Card = ({ newFeature }) => {
-  console.log(newFeature);
-
   return (
     <div className="max-w-6xl mx-auto py-20 ">
       <div className="w-full flex">
