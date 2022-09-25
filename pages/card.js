@@ -21,15 +21,20 @@ const card = () => {
 
         <div className="absolute  top-8 right-8 ">
           <img
-            className="w-64 h-36 object-cover rounded-2xl shadow-3xl rotate-2 "
+            className="w-64 h-36 object-cover rounded-2xl shadow-3xl rotate-3 "
             src="/assets/radio.jpeg"
+            alt=""
+          />
+          <img
+            className="w-64 h-36 object-cover rounded-2xl shadow-3xl -rotate-3 translate-x-16  "
+            src="/assets/Visualizing.jpeg"
             alt=""
           />
         </div>
 
         {/* last content */}
         <div className=" relative flex flex-col justify-end h-full p-8 space-y-4 w-2/3 ">
-          <p className="uppercase font-semibold text-xs text-pink-600">
+          <p className="uppercase font-semibold text-xs text-pink-600  ">
             How we are build it
           </p>
           <h1 className="text-4xl font-extrabold ">
