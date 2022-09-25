@@ -7,7 +7,7 @@ const grid = () => {
         <h1 className="text-4xl font-extrabold xms:col-span-2 xms:w-1/2 ">
           Lorem ipsum dolor sit amet consectetur.
         </h1>
-        <p>
+        <p className="xms:row-start-2 xms:col-start-2 self-center ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias
           error illum id, dolore consequatur voluptatibus nisi autem fuga vel
           iure aperiam consectetur laudantium maxime.{" "}
@@ -20,7 +20,7 @@ const grid = () => {
         <div className="h-16 bg-blue-500 xms:h-auto xms:aspect-square "></div>
         <div className="h-16 bg-blue-500 xms:h-auto xms:aspect-square "></div>
         <div className="h-16 bg-blue-500 xms:h-auto xms:aspect-square "></div>
-        <p>
+        <p className="self-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           suscipit libero laudantium officiis itaque! Ipsa consequatur at
           nostrum amet minima .
