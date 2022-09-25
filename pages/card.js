@@ -13,8 +13,11 @@ const card = () => {
           />
         </div>
 
+        {/* right big circle */}
+        <div className="w-[512px] h-[512px] bg-purple-200 absolute rounded-full -top-20 -right-56 "></div>
+
         {/* last content */}
-        <div className="flex flex-col justify-end h-full p-8 space-y-4 w-2/3 ">
+        <div className=" relative flex flex-col justify-end h-full p-8 space-y-4 w-2/3 ">
           <p className="uppercase font-semibold text-xs text-pink-600">
             How we are build it
           </p>
