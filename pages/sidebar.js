@@ -28,9 +28,17 @@ const Sidebar = () => {
 
   return (
     <section className="flex gap-6">
-      <div className="bg-[#0e0e0e] min-h-screen w-72 text-gray-50 px-4 ">
+      <div
+        className={`bg-[#0e0e0e] min-h-screen ${
+          open ? "w-72" : "w-16"
+        } duration-500 text-gray-50 px-4  `}
+      >
         <div className="py-3 flex justify-end">
-          <HiMenuAlt3 className="cursor-pointer" size={26} />
+          <HiMenuAlt3
+            className="cursor-pointer"
+            size={26}
+            onClick={() => setOpen(!open)}
+          />
         </div>
         <div className="mt-6 flex flex-col gap-6">
           {menus.map((menu, i) => (
@@ -43,7 +51,7 @@ const Sidebar = () => {
               <Link href={`/${menu.link}`}>
                 <>
                   <div>{React.createElement(menu.icon, { size: "20" })}</div>
-                  <h2>{menu.name}</h2>
+                  <h2 className={``}>{menu.name}</h2>
                 </>
               </Link>
             </div>
