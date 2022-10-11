@@ -4,6 +4,7 @@ import { links } from "./Data";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
+  const [subHeading, setSubHeading] = useState("");
 
   return (
     <div className="md:flex gap-8 ">
@@ -12,9 +13,10 @@ const NavLinks = () => {
           <div className="px-3 text-left md:cursor-pointer group ">
             <h1
               className="py-7"
-              onClick={() =>
-                heading !== link.name ? setHeading(link.name) : setHeading("")
-              }
+              onClick={() => {
+                heading !== link.name ? setHeading(link.name) : setHeading("");
+                setSubHeading("");
+              }}
             >
               {link.name}
             </h1>
@@ -55,10 +57,21 @@ const NavLinks = () => {
             {link.sublinks.map((slinks) => (
               <div key={slinks.Head}>
                 <div>
-                  <h1 className="py-2 pl-7 font-semibold md:p-0 pr-5">
+                  <h1
+                    onClick={() =>
+                      subHeading !== slinks.Head
+                        ? setSubHeading(slinks.Head)
+                        : setSubHeading("")
+                    }
+                    className="py-2 pl-7 font-semibold md:p-0 pr-5"
+                  >
                     {slinks.Head}
                   </h1>
-                  <div>
+                  <div
+                    className={`${
+                      subHeading === slinks.Head ? "md:hidden" : "hidden"
+                    }`}
+                  >
                     {slinks.sublinks.map((slink) => (
                       <li key={slink.name} className="py-2 pl-14">
                         <Link href={slink.link}>
