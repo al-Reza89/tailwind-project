@@ -1,14 +1,18 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { links } from "./Data";
 
 const NavLinks = () => {
+  const [heading, setHeading] = useState("");
+
   return (
     <div className="md:flex gap-8 ">
       {links.map((link) => (
         <div key={link.id}>
           <div className="px-3 text-left md:cursor-pointer group ">
-            <h1 className="py-7">{link.name}</h1>
+            <h1 className="py-7" onClick={() => setHeading(link.name)}>
+              {link.name}
+            </h1>
             {link.submenu && (
               <div>
                 <div className="absolute top-20 hidden group-hover:md:block hover:md:block ">
@@ -41,6 +45,26 @@ const NavLinks = () => {
             )}
           </div>
           {/* for mobile device */}
+          <div>
+            {link.sublinks.map((slinks) => (
+              <div key={slinks.Head}>
+                <div>
+                  <h1 className="py-2 pl-7 font-semibold md:p-0 pr-5">
+                    {slinks.Head}
+                  </h1>
+                  <div>
+                    {slinks.sublinks.map((slink) => (
+                      <li key={slink.name} className="py-2 pl-14">
+                        <Link href={slink.link}>
+                          <span>{slink.name}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>
