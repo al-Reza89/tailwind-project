@@ -45,7 +45,8 @@ const NavLinks = () => {
             )}
           </div>
           {/* for mobile device */}
-          <div>
+          {/* if heading means men , women ,kids er shathe na mille hidden thakbe kintu md er boro hoile o abar oita o hidden thakbe */}
+          <div className={`${heading === link.name ? "md:hidden" : "hidden"}`}>
             {link.sublinks.map((slinks) => (
               <div key={slinks.Head}>
                 <div>
