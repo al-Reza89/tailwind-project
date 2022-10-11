@@ -10,7 +10,12 @@ const NavLinks = () => {
       {links.map((link) => (
         <div key={link.id}>
           <div className="px-3 text-left md:cursor-pointer group ">
-            <h1 className="py-7" onClick={() => setHeading(link.name)}>
+            <h1
+              className="py-7"
+              onClick={() =>
+                heading !== link.name ? setHeading(link.name) : setHeading("")
+              }
+            >
               {link.name}
             </h1>
             {link.submenu && (
