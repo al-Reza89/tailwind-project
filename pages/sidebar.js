@@ -51,7 +51,13 @@ const Sidebar = () => {
               <Link href={`/${menu.link}`}>
                 <>
                   <div>{React.createElement(menu.icon, { size: "20" })}</div>
-                  <h2 className={``}>{menu.name}</h2>
+                  <h2
+                    className={`whitespace-pre duration-500 ${
+                      !open && "opacity-0 translate-x-28  "
+                    } `}
+                  >
+                    {menu.name}
+                  </h2>
                 </>
               </Link>
             </div>
