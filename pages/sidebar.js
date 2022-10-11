@@ -46,7 +46,7 @@ const Sidebar = () => {
               key={i}
               className={` ${
                 menu.margin && "mt-10"
-              } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 `}
+              } group flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 `}
             >
               <Link href={`/${menu.link}`}>
                 <>
@@ -56,6 +56,13 @@ const Sidebar = () => {
                     className={`whitespace-pre duration-500 ${
                       !open && "opacity-0 translate-x-28  "
                     } `}
+                  >
+                    {menu.name}
+                  </h2>
+                  <h2
+                    className={` ${
+                      open && "hidden"
+                    } absolute left-48 bg-white font-semibold whitespace-pre text-green-900  rounded-md drop-shadow-lg w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-16 group-hover:duration-300 group-hover:w-fit `}
                   >
                     {menu.name}
                   </h2>
