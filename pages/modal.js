@@ -28,7 +28,10 @@ const Modal = () => {
         >
           Video Modal
         </button>
-        <button className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium text-sm rounded-lg px-5 py-2.5 text-center mr-5">
+        <button
+          onClick={() => setShowModal3(true)}
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium text-sm rounded-lg px-5 py-2.5 text-center mr-5"
+        >
           From Modal
         </button>
       </div>
@@ -52,6 +55,9 @@ const Modal = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+      </ModalC>
+      <ModalC isVisible={showModal3} onClose={() => setShowModal3(false)}>
+        form model
       </ModalC>
     </>
   );
