@@ -1,6 +1,6 @@
 import React from "react";
 
-const ModalC = ({ isVisible, onClose }) => {
+const ModalC = ({ isVisible, onClose, children }) => {
   if (!isVisible) return null;
 
   const handleClose = (e) => {
@@ -22,7 +22,7 @@ const ModalC = ({ isVisible, onClose }) => {
         >
           X
         </button>
-        <div className="bg-white p-2 rounded ">Modal</div>
+        <div className="bg-white p-2 rounded ">{children}</div>
       </div>
     </div>
   );
