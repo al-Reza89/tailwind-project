@@ -3,8 +3,18 @@ import React from "react";
 const ModalC = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
 
+  const handleClose = (e) => {
+    if (e.target.id === "wrapper") {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center ">
+    <div
+      onClick={handleClose}
+      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center "
+      id="wrapper"
+    >
       <div className="w-[600px] flex flex-col ">
         <button
           onClick={() => onClose()}
